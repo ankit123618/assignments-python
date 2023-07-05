@@ -1,12 +1,10 @@
 import json
 
-
 class fruit:
     def __init__(self, id, name, color):
         self.id = id
         self.name = name
         self.color = color
-        print(self.id, self.name, self.color)
 
 
 fruits = [
@@ -17,6 +15,14 @@ fruits = [
     fruit(5, "grapes", "green"),
 ]
 
+# list of our fruit objects 
+print("LIST OF OUR FRUIT OBJECTS: ")
+print()
+for x in fruits:
+        print("id => ",x.id)
+        print("name => ",x.name)
+        print("color => ",x.color)
+        print()
 
 def get_sorted_fruits():
     # Sort the fruits based on color
@@ -32,4 +38,6 @@ for fruit in ad:
         'name': fruit.name,
         'color': fruit.color
         })
-print(fruits_json)
+
+
+print("SORTED FRUIT OBJECTS BY COLOR: ",fruits_json)
