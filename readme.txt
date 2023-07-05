@@ -1,0 +1,1 @@
+create a database test and then export the test.sql fileinside the database
